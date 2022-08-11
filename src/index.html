@@ -8,10 +8,27 @@
     <title>RandomBackground</title>
   </head>
   <body>
-    <div class="bg_holder">
-      Background Color: <span class="color">#FFFFFF</span>
-    </div>
-    <button class="btn">click me</button>
+    <main>
+      <header class="modes">
+        <div class="modes__item active" mode="1">RandomBG</div>
+        <div class="modes__item" mode="2">Counter</div>
+      </header>
+      <section class="modes__content active" mode-content="1">
+        <div class="bg_holder">
+          Background Color: <span class="color">#FFFFFF</span>
+        </div>
+        <button class="btn btn-bg">click me</button>
+      </section>
+      <section class="modes__content counter" mode-content="2">
+        <h1 class="counter__title">Counter</h1>
+        <div class="counter__num">0</div>
+        <div class="btn__wrapper">
+          <div class="btn counter__btn" data-btn="-1">decrease</div>
+          <div class="btn counter__btn" data-btn="0">reset</div>
+          <div class="btn counter__btn" data-btn="1">increase</div>
+        </div>
+      </section>
+    </main>
   </body>
   <script src="js/script.js"></script>
 </html>

@@ -1,0 +1,28 @@
+.modes {
+  background: #fff;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 1px 0 15px 0;
+}
+
+.modes__item {
+  transition: 0.2s;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover {
+    color: skyblue;
+  }
+  &.active {
+    color: rgb(29, 170, 226);
+    cursor: default;
+  }
+}
+
+.modes__content {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
