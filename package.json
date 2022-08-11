@@ -1,5 +1,5 @@
 {
-  "name": "random_background",
+  "name": "useful_modes",
   "version": "1.0.0",
   "description": "creates random bg color tag",
   "main": "script.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YarikCool/RandomBG.git"
+    "url": "git+https://github.com/YarikCool/UsefulPCModes.git"
   },
   "author": "Yaro",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/YarikCool/RandomBG/issues"
+    "url": "https://github.com/YarikCool/UsefulPCModes/issues"
   },
-  "homepage": "https://github.com/YarikCool/RandomBG#readme",
+  "homepage": "https://github.com/YarikCool/UsefulPCModes#readme",
   "devDependencies": {
     "browser-sync": "^2.27.5",
     "gulp": "^4.0.2",
