@@ -70,7 +70,7 @@ function getColor(num) {
     return "red";
   }
   if (+num === 0) {
-    return "#fff";
+    return "#111";
   }
   return "lime";
 }
