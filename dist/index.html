@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/icon-fonts.css" />
     <link rel="stylesheet" href="css/style.min.css" />
     <title>UsefulPCModes</title>
   </head>
@@ -12,20 +13,51 @@
       <header class="modes">
         <div class="modes__item active" mode="1">RandomBG</div>
         <div class="modes__item" mode="2">Counter</div>
+        <div class="modes__item" mode="3">Calculator</div>
       </header>
       <section class="modes__content active" mode-content="1">
-        <div class="bg_holder">
-          Background Color: <span class="color">#FFFFFF</span>
+        <div class="bg__holder">
+          Background Colors:
+          <span class="bg__color1">#FFFFFF</span>,
+          <span class="bg__color2">#FFFFFF</span>
         </div>
-        <button class="btn btn-bg">click me</button>
+        <button class="btn bg__btn">click me</button>
       </section>
       <section class="modes__content counter" mode-content="2">
-        <h1 class="counter__title">Counter</h1>
+        <div class="counter__title">Counter</div>
         <div class="counter__num">0</div>
         <div class="btn__wrapper">
-          <div class="btn counter__btn" data-btn="-1">decrease</div>
-          <div class="btn counter__btn" data-btn="0">reset</div>
-          <div class="btn counter__btn" data-btn="1">increase</div>
+          <button class="btn counter__btn" data-btn="-1">decrease</button>
+          <button class="btn counter__btn" data-btn="0">reset</button>
+          <button class="btn counter__btn" data-btn="1">increase</button>
+        </div>
+      </section>
+      <section class="modes__content calc" mode-content="3">
+        <div class="calc__title">calculator</div>
+        <div class="calc__wrapper">
+          <div class="calc__btn-wrapper">
+            <div class="calc__input"><span class="input_text">0</span></div>
+            <button class="btn calc__btn" btn-value="c">C</button>
+            <button class="btn calc__btn" btn-value=".">.</button>
+            <button class="btn calc__btn btn-delete" btn-value="del">
+              <span class="icon-delete"></span>
+            </button>
+            <button class="btn calc__btn" btn-value="1">1</button>
+            <button class="btn calc__btn" btn-value="2">2</button>
+            <button class="btn calc__btn" btn-value="3">3</button>
+            <button class="btn calc__btn" btn-value="+">+</button>
+            <button class="btn calc__btn" btn-value="4">4</button>
+            <button class="btn calc__btn" btn-value="5">5</button>
+            <button class="btn calc__btn" btn-value="6">6</button>
+            <button class="btn calc__btn" btn-value="-">-</button>
+            <button class="btn calc__btn" btn-value="7">7</button>
+            <button class="btn calc__btn" btn-value="8">8</button>
+            <button class="btn calc__btn" btn-value="9">9</button>
+            <button class="btn calc__btn" btn-value="/">/</button>
+            <button class="btn calc__btn btn-zero" btn-value="0">0</button>
+            <button class="btn calc__btn" btn-value="answ">=</button>
+            <button class="btn calc__btn" btn-value="*">X</button>
+          </div>
         </div>
       </section>
     </main>

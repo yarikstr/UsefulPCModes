@@ -1,6 +1,8 @@
-@import "tabs/modes.scss";
-@import "tabs/_randomBg.scss";
-@import "tabs/_counter.scss";
+@import "icon-fonts";
+@import "tabs/modes";
+@import "tabs/randomBg";
+@import "tabs/counter";
+@import "tabs/calculator";
 
 * {
   box-sizing: border-box;
@@ -21,7 +23,6 @@ body {
   font-weight: 700;
   border: 2px #111 solid;
   border-radius: 5px;
-  margin: 0 auto;
   transition: 0.5s;
   &:hover {
     background: #111;
